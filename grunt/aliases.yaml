@@ -1,7 +1,0 @@
-build-css:
-- 'sass'
-- 'autoprefixer'
-- 'watch'
-
-default:
-- 'build-css'

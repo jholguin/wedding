@@ -1,8 +1,0 @@
-wedding:
-    image: httpd:alpine
-    volumes:
-      - ./dist:/usr/local/apache2/htdocs/
-    ports:
-      - 80:80
-    environment:
-      - VIRTUAL_HOST=localhost
