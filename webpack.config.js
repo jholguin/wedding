@@ -41,13 +41,20 @@ module.exports = {
   		  ]
       },
       {
-	      test: /\.(?:png|jpg|svg|eot|ttf|woff|woff2)$/,
-	      loader: 'url-loader',
-	      query: {
-	        // Inline images smaller than 10kb as data URIs
-	        limit: 10000
-	      }
-	    }
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=dist/fonts/[name].[ext]',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg)$/,
+        loader: 'file-loader?name=dist/images/[name].[ext]',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(ico)$/,
+        loader: 'file-loader?name=dist/[name].[ext]',
+        exclude: /node_modules/
+      }
 		]
 	},
 	plugins: [HtmlWebpackPluginConfig],
