@@ -14,8 +14,6 @@ export default class Header extends Component{
     this.setState({
       expandMenu: !this.state.expandMenu
  		})
- 		
- 		console.log(this.state)
   }
 
 	render(){

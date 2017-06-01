@@ -1,0 +1,39 @@
+.couple{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Reenie Beanie', cursive;
+  text-align: center;
+  color: #000;
+
+  figure{
+    margin-bottom: 50px;
+    transition: width 2s linear;
+    
+    figcaption{
+      font-size: 2em;
+      margin: 10px 0;
+    }
+
+    @media screen and (min-width: 1024px){
+      width: 50%;
+    }
+
+    @media screen and (min-width: 1440px){
+      width: 30%;
+    }
+  }
+
+  img{
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 0 25px rgba(0,0,0,.8);
+  }
+
+  h2{
+    width: 100%;
+    font-size: 3em;
+    margin: 20px;
+  }
+}
