@@ -1,0 +1,78 @@
+.our-story{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .card{
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 0 5px #000;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    min-height: 200px;
+    max-width: 520px;
+    font-size: 24px;
+    line-height: 1.2;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-color: rgba(0,0,0,.6);
+      z-index: 0;
+    }
+    
+    h3{
+      text-align: center;
+      font-size: 18px;
+      margin: 10px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    p{
+      font-family: 'Reenie Beanie', cursive;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .one{
+    background-image: url(./contigo.jpg);
+  }
+
+  .two{
+    background-image: url(./us.jpg);
+  }
+
+  .three{
+    background-image: url(./seattle.png);
+  }
+
+  .four{
+    background-image: url(./hawaii.jpg);
+  }
+
+  .five{
+    background-image: url(./chewie.jpg);
+  }
+
+  .six{
+    background-image: url(./france.jpg);
+  }
+
+  .seven{
+    background-image: url(./xmas.jpg);
+  }
+
+  .eight{
+    background-image: url(./sim.jpg);
+  }
+}

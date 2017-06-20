@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
-@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
-@import '../App/fonts';
-
 header{
-  background: rgba(0,0,0,.5); 
-  color: #fff;
+  background-color: #e7e7e7;
+  color: #000;
   width: 100vw;
   box-shadow: 0 0 5px #000;
   position: fixed;
+  z-index: 101;
   
   nav{
     display:flex;
@@ -33,6 +30,7 @@ header{
     .icon-octopus{
       order: -1;
       font-size: 3em;
+      color: #11778a;
     }
 
     @media screen and (min-width: 920px){

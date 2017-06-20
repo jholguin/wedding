@@ -25,7 +25,7 @@ export default class Header extends Component{
 					<span>Our Story</span>
 					<span className="icon-octopus"></span>
 					<span>Event</span>
-					<span>Location</span>
+					<span>Events</span>
 					<span>Registry</span>
 					<span>RSVP</span>
 				</nav>
