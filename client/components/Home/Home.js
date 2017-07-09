@@ -37,24 +37,26 @@ export default class Header extends Component{
   render(){
     return(
       <section className="container headline">
-        <h1>Christina &amp; Josh</h1>
-        <h2>{this.props.weddingDate}</h2>
-        <div className="counter">
-          <div className="days">
-            {this.state.days}
-            <span>Days</span>
-          </div>
-          <div className="hours">
-            {this.state.hours}
-            <span>Hours</span>
-          </div>
-          <div className="minutes">
-            {this.state.minutes}
-            <span>Minutes</span>
-          </div>
-          <div className="seconds">
-            {this.state.seconds}
-            <span>Seconds</span>
+        <div>
+          <h1>Christina &amp; Josh</h1>
+          <h2>{this.props.weddingDate}</h2>
+          <div className="counter">
+            <div className="days">
+              {this.state.days}
+              <span>Days</span>
+            </div>
+            <div className="hours">
+              {this.state.hours}
+              <span>Hours</span>
+            </div>
+            <div className="minutes">
+              {this.state.minutes}
+              <span>Minutes</span>
+            </div>
+            <div className="seconds">
+              {this.state.seconds}
+              <span>Seconds</span>
+            </div>
           </div>
         </div>
       </section>

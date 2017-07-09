@@ -3,22 +3,34 @@ import './OurStory.scss'
 
 
 export default class OurStory extends Component{
-
+  
   render(){
-    
+    const contigo = require('./contigo.jpg')
+    const sxsw = require('./sxsw.jpg')
+
     return(
       <section className="container our-story">
         <h2>Our Story</h2>
         <div className="carousel">
           <section className="card one">
             <h3>September 15, 2014</h3>
-            <p>An affair of the heart "hinged" on cocktails and conversation... Our first date was at Contigo in Austin after connecting on the online dating app, Hinge. Relieved to recognize each other's faces in a sea of online dating profiles, our first date was mellow, void of (most) of the usual awkwardness. Though there was the standard first date chit chat about where we were each from, what we did for fun, etc., one thing was clear - we both had a profound love for music and whether Josh knew it then or not, wine. A love that would carry us through to... </p>
+            <figure>
+              <img src={contigo} alt="contigo" />
+              <figcaption>
+                <p>An affair of the heart "hinged" on cocktails and conversation... Our first date was at Contigo in Austin after connecting on the online dating app, Hinge. Relieved to recognize each other's faces in a sea of online dating profiles, our first date was mellow, void of (most) of the usual awkwardness. Though there was the standard first date chit chat about where we were each from, what we did for fun, etc., one thing was clear - we both had a profound love for music and whether Josh knew it then or not, wine. A love that would carry us through to...</p>
+              </figcaption>
+            </figure>
           </section>
           <section className="card two">
             <h3>October 3, 2014</h3>
-            <p>Wigs, balloon bombs, and amore in the air... Want to get to know someone? Spend 72 hours with them at a music festival. Austin City Limits turned into our third, fourth and fifth dates. During each of our self-inflicted themed days we wigged out, dressed as Florida tourists and put on our Chelsea/Giants best. We've been laughing, sharing stories and swaying to the music ever since. </p>
+            <figure>
+              <img src={sxsw} alt="sxsw" />
+              <figcaption>
+                <p>Wigs, balloon bombs, and amore in the air... Want to get to know someone? Spend 72 hours with them at a music festival. Austin City Limits turned into our third, fourth and fifth dates. During each of our self-inflicted themed days we wigged out, dressed as Florida tourists and put on our Chelsea/Giants best. We've been laughing, sharing stories and swaying to the music ever since. </p>
+              </figcaption>
+            </figure>
           </section>
-          <section className="card three">
+          {/*<section className="card three">
             <h3>April 9, 2015</h3>
             <p>Off to see the wizard... Josh took Christina to his second home, Seattle, for her birthday. It was in the Emerald City we indulged our love for oysters, coffee and the Sound. It was reassuring we could make home anywhere we went, if even for just one memorable week.</p>
           </section>
@@ -41,7 +53,7 @@ export default class OurStory extends Component{
           <section className="card eight">
             <h3>April 28, 2017</h3>
             <p>She said "sim!"... In Texas wine country (Fredericksburg), in front Messina Hof winery, Josh popped the question, in Portuguese no less! With our parents capturing the moment, we knew it was time we sealed the deal. Which leads us to... </p>
-          </section>
+          </section>*/}
         </div>
       </section>
     )
