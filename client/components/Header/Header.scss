@@ -13,14 +13,16 @@ header{
     align-items:center;
 
     &.hide{
-      span:not(.icon-octopus){
+      a:not(.icon-octopus){
         display: none;
       }  
     }
 
-    span:not(.icon-octopus){
+    a:not(.icon-octopus){
       border-bottom: 1px solid #fff;
       padding: 10px 30px;
+      color: #000;
+      text-decoration: none;
       
       &:last-child{
         border: none;
@@ -39,7 +41,7 @@ header{
         order: 0;
       }
       &.hide,&.show{
-        span:not(.icon-octopus){
+        a:not(.icon-octopus){
           display: block;
           border: none;
         }  

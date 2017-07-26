@@ -8,6 +8,7 @@ export default class Header extends Component{
 		this.state = { expandMenu: false }
 
 		this.handleMenuClick = this.handleMenuClick.bind(this)
+		this.handleClick = this.handleClick.bind(this)
 	}
 
 	handleMenuClick() {
@@ -16,18 +17,25 @@ export default class Header extends Component{
  		})
   }
 
+  handleClick(e){
+  	e.preventDefault()
+  	let t = document.querySelector(e.target.hash)
+  	let body = document.querySelector('body')
+  	body.scrollTop = t.offsetTop - 48
+  }
+
 	render(){
 		return(
 			<header>
 				<nav className={this.state.expandMenu ? 'show': 'hide'}>
-					<span>Home</span>
-					<span>Couple</span>
-					<span>Our Story</span>
+					<a href="#home" onClick={this.handleClick}>Home</a>
+					<a href="#couple" onClick={this.handleClick}>Couple</a>
+					<a href="our-story">Our Story</a>
 					<span className="icon-octopus"></span>
-					<span>Event</span>
-					<span>Events</span>
-					<span>Registry</span>
-					<span>RSVP</span>
+					<a href="event">Event</a>
+					<a href="events">Events</a>
+					<a href="registry">Registry</a>
+					<a href="rsvp">RSVP</a>
 				</nav>
 				<section className="menu" onClick={this.handleMenuClick}>
 					<span></span>

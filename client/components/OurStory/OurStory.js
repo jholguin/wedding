@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import './OurStory.scss'
 
-
 export default class OurStory extends Component{
-  
+
   render(){
     const contigo = require('./contigo.jpg')
     const sxsw = require('./sxsw.jpg')
 
     return(
       <section className="container our-story">
+        <a id="our-story" />
         <h2>Our Story</h2>
         <div className="carousel">
           <section className="card one">

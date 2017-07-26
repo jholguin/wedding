@@ -31,10 +31,24 @@
         background-size: cover;
         min-height: 200px;
         width:100%;
+
+        @media screen and (min-width: 1024px){
+          width: 40%;
+        }
       }
       
       figcaption{
         padding: 10px;
+        @media screen and (min-width: 1024px){
+          width: 60%;
+        }
+      }
+
+      @media screen and (min-width: 1024px){
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        min-height: 285px;
       }
       
     }
@@ -74,6 +88,10 @@
 
     &.eight .image{
       background-image: url('./sim.jpg');
+    }
+
+    @media screen and (min-width: 1024px){
+      max-width:1024px;
     }
   }
 

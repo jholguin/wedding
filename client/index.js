@@ -13,13 +13,17 @@ import Rsvp from './components/Rsvp/Rsvp'
 
 ReactDOM.render(
 	<div>
+		<a id="home" />
 		<Header />
 		<Home weddingDate="Feburary 24, 2018" />
-    <Couple />
-    <OurStory />
-    <Venue />
-    <Registry />
-    <Rsvp />
+	    <Couple />
+	    <OurStory />
+	    <Venue />
+	    <Registry />
+	    <Rsvp />
+	    <footer>
+        Developed by yours truely <a href="http://www.thinkjosh.com">&copy;Thinkjosh.com</a>
+      </footer>
 	</div>
 	,document.getElementById('app')
 )

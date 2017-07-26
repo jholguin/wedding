@@ -3,10 +3,22 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  .hide{
+    display: none;
+  }
+
+  .show{
+    display: block;
+  }
   
   form{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
+  }
+
+  img{
+    margin: 10px 0;
   }
 
   label{
@@ -29,11 +41,19 @@
       border:none;
       width: auto;
       padding: 5px 20px;
+      margin: 0 auto;
       &:hover{
         cursor: pointer;
         background: #11778a;
         color: #fff;
       }
     }
+  }
+
+  .success{
+    margin: 20px 0;
+    font-family: 'Reenie Beanie', cursive;
+    font-size:45px;
+    color: #11778a;
   }
 }

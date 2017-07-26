@@ -11,6 +11,7 @@ export default class Header extends Component{
 
     return(
       <section className="container couple">
+        <a id="couple"></a>
         <h2>The Couple</h2>
         <figure>
           <img src={josh} alt="Josh Holguin" />

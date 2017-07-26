@@ -2,10 +2,17 @@
   background-color: #fff;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   font-family: 'Reenie Beanie', cursive;
   text-align: center;
   color: #000;
+  max-width: 1024px;
+
+  h2{
+    width: 100%;
+  }
 
   figure{
     margin-bottom: 50px;
@@ -15,17 +22,16 @@
       font-size: 2em;
       margin: 10px 0;
     }
-
-    @media screen and (min-width: 1024px){
-      width: 50%;
-    }
-
-    @media screen and (min-width: 1440px){
-      width: 30%;
-    }
   }
 
   img{
     box-shadow: 0 0 25px rgba(0,0,0,.8);
+  }
+
+  @media screen and (min-width: 1024px){
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
   }
 }
