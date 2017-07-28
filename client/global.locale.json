@@ -1,0 +1,7 @@
+{
+  "home": {
+    "days": ["Days", "dias"],
+    "hours": ["Hours", "horas"],
+    "minutes": ["Minutes", "minutos"]
+  }
+}

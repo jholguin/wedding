@@ -24,13 +24,9 @@ module.exports = {
 				loader: 'babel-loader', 
 				exclude: /node_modules/,
         query:{
-          presets: ['react', 'es2015', 'stage-0']
+          presets: ['react', 'es2015', 'stage-0'],
+          plugins: ['transform-decorators-legacy']
         } 
-			},
-			{ 
-				test: /\.jsx$/, 
-				loader: 'babel-loader', 
-				exclude: /node_modules/ 
 			},
 			{ 
 				test: /\.scss$/,
@@ -54,6 +50,11 @@ module.exports = {
         test: /\.(ico)$/,
         loader: 'file-loader?name=dist/[name].[ext]',
         exclude: /node_modules/
+      },
+      { 
+        test: /\.json$/, 
+        loaders: [ 'json-loader' ], 
+        exclude: /node_modules/ 
       }
 		]
 	},

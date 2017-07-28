@@ -10,6 +10,7 @@ export default class Registry extends Component{
 
     return(
       <section className="container registry">
+        <a id="registry" />
         <h2>Wedding Registry</h2>
         <div>
           <a target="_blank" href="https://www.amazon.com/wedding/christina-furtado-josh-holguin-austin-february-2018/registry/3U2BLTJM48YUH">

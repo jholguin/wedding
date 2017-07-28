@@ -30,12 +30,12 @@ export default class Header extends Component{
 				<nav className={this.state.expandMenu ? 'show': 'hide'}>
 					<a href="#home" onClick={this.handleClick}>Home</a>
 					<a href="#couple" onClick={this.handleClick}>Couple</a>
-					<a href="our-story">Our Story</a>
+					<a href="#our-story" onClick={this.handleClick}>Our Story</a>
 					<span className="icon-octopus"></span>
-					<a href="event">Event</a>
-					<a href="events">Events</a>
-					<a href="registry">Registry</a>
-					<a href="rsvp">RSVP</a>
+					<a href="#venue" onClick={this.handleClick}>Venue</a>
+					<a href="#playlist" onClick={this.handleClick}>Playlist</a>
+					<a href="#registry" onClick={this.handleClick}>Registry</a>
+					<a href="#rsvp" onClick={this.handleClick}>RSVP</a>
 				</nav>
 				<section className="menu" onClick={this.handleMenuClick}>
 					<span></span>

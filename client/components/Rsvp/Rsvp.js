@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
+import { connect } from "react-redux"
 import './Rsvp.scss'
-import firebase from '../firebase.js'
 
+import { submitRSVP } from '../../actions/rsvpActions'
+
+@connect((store) => {
+  return {
+    rsvp: store.rsvp
+  };
+})
 export default class Rsvp extends Component{
 
   constructor() {
     super()
-
     this.state = {
       fullname: '',
       email: '',
-      rsvp: '',
-      submit: false,
-      submitting: false
-    }
+      rsvp: ''
+    };
 
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -21,28 +25,14 @@ export default class Rsvp extends Component{
 
   handleSubmit(e) {
     e.preventDefault()
-    
-    const rsvpRef = firebase.database().ref('rsvp')
 
     const rsvp = {
       fullname: this.state.fullname,
       email: this.state.email,
       rsvp: this.state.rsvp
     }
-    
-    this.setState({loading: true})
 
-    rsvpRef.push(rsvp, () => {
-      setTimeout(() => {
-        this.setState({
-          fullname: '',
-          email: '',
-          rsvp: '',
-          submit: true,
-          loading: false
-        });
-      }, 1500)
-    });
+    this.props.dispatch(submitRSVP(rsvp))
   }
 
   handleChange(e){
@@ -52,20 +42,22 @@ export default class Rsvp extends Component{
   }
 
   render(){
-
+    const { rsvp } = this.props
     let hearts = require('./hearts.svg')
     
     return(
       <section className="container rsvp">
+        <a id="rsvp" />
         <h2>RSVP</h2>
-        <form onSubmit={this.handleSubmit} className={(this.state.loading == true || this.state.submit == true) ? 'hide' : 'show'}>
+        <form onSubmit={this.handleSubmit} className={(rsvp.submitting || rsvp.submitted) ? 'hide' : 'show'}>
           <label htmlFor="name">
-            <input type="text" placeholder="Full Name" name="fullname" onChange={this.handleChange} value={this.state.fullname} />
+            <input type="text" placeholder="Full Name" name="fullname" onChange={this.handleChange} value={this.state.fullname}  />
           </label>
           <label htmlFor="email">
             <input type="text" placeholder="Email" name="email" onChange={this.handleChange} value={this.state.email} />
           </label>
           <label htmlFor="attendance">
+            Will You Attend?
             <select name="rsvp" onChange={this.handleChange} value={this.state.rsvp}>
               <option value="">--Select One---</option>
               <option value="yes">Yes</option>
@@ -74,8 +66,8 @@ export default class Rsvp extends Component{
           </label>
           <input type="submit" value="Submit" />
         </form>
-        <img src={hearts} alt="loading" className={(this.state.loading == true) ? 'show' : 'hide'} />
-        <div className={`success ${(this.state.submit == true) ? 'show' : 'hide'}`}>
+        <img src={hearts} alt="loading" className={(rsvp.submitting) ? 'show' : 'hide'} />
+        <div className={`success ${(rsvp.submitted) ? 'show' : 'hide'}`}>
           Thank you for your rsvp
         </div>
       </section>

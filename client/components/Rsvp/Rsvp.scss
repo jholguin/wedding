@@ -15,6 +15,7 @@
   form{
     width: 100%;
     max-width: 1024px;
+    padding:10px;
   }
 
   img{
@@ -24,6 +25,14 @@
   label{
     margin-bottom: 30px;
     display: block;
+  }
+
+  select{
+    display: block;
+    padding: 10px;
+    border: 2px solid #11778a;
+    margin-top: 15px;
+    width: 220px;
   }
   
   input{

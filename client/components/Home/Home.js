@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import { connect } from "react-redux"
+import { getActiveLanguage, getTranslate } from 'react-localize-redux';
 import './Home.scss'
 
+@connect((store) => {
+  return {
+    translate: getTranslate(store.local)
+  };
+})
 export default class Header extends Component{
 
   constructor(props){
@@ -12,6 +19,7 @@ export default class Header extends Component{
       minutes: 0,
       seconds: 0
     }
+    //console.log(this.props.translate("greeting"))
   }
 
   countDown(){
@@ -35,6 +43,10 @@ export default class Header extends Component{
   }
 
   render(){
+
+    const translate = this.props.translate
+    
+
     return(
       <section className="container headline">
         <div>
@@ -43,15 +55,15 @@ export default class Header extends Component{
           <div className="counter">
             <div className="days">
               {this.state.days}
-              <span>Days</span>
+              <span>{translate("home.days")}</span>
             </div>
             <div className="hours">
               {this.state.hours}
-              <span>Hours</span>
+              <span>{translate("home.hours")}</span>
             </div>
             <div className="minutes">
               {this.state.minutes}
-              <span>Minutes</span>
+              <span>{translate("home.minutes")}</span>
             </div>
             <div className="seconds">
               {this.state.seconds}
