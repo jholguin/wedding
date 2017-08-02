@@ -35,6 +35,10 @@ header{
       color: #11778a;
     }
 
+    img{
+      width: 30px;
+    }
+
     @media screen and (min-width: 920px){
       flex-direction: row;
       .icon-octopus{

@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
+import { getTranslate } from 'react-localize-redux';
 import './Rsvp.scss'
 
 import { submitRSVP } from '../../actions/rsvpActions'
 
 @connect((store) => {
   return {
+    translate: getTranslate(store.local),
     rsvp: store.rsvp
-  };
+  }
 })
 export default class Rsvp extends Component{
 
@@ -44,6 +46,7 @@ export default class Rsvp extends Component{
   render(){
     const { rsvp } = this.props
     let hearts = require('./hearts.svg')
+    const translate = this.props.translate
     
     return(
       <section className="container rsvp">
@@ -57,14 +60,14 @@ export default class Rsvp extends Component{
             <input type="text" placeholder="Email" name="email" onChange={this.handleChange} value={this.state.email} />
           </label>
           <label htmlFor="attendance">
-            Will You Attend?
+            {translate("rsvp.attend")}
             <select name="rsvp" onChange={this.handleChange} value={this.state.rsvp}>
               <option value="">--Select One---</option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
           </label>
-          <input type="submit" value="Submit" />
+          <input type="submit" value={translate("rsvp.submit")} />
         </form>
         <img src={hearts} alt="loading" className={(rsvp.submitting) ? 'show' : 'hide'} />
         <div className={`success ${(rsvp.submitted) ? 'show' : 'hide'}`}>

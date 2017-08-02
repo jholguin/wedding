@@ -1,7 +1,91 @@
 {
   "home": {
-    "days": ["Days", "dias"],
-    "hours": ["Hours", "horas"],
-    "minutes": ["Minutes", "minutos"]
+    "days": ["Days", "Dias"],
+    "hours": ["Hours", "Horas"],
+    "minutes": ["Minutes", "Minutos"],
+    "seconds": ["Seconds", "Segundos"]
+  },
+  "couple":{
+    "title": ["The Couple", "O Casal"]
+  },
+  "our-story":{
+    "title": ["Our Story", "A nossa história"],
+    "stories":{
+      "one":{
+        "date": ["September 15, 2014", "Setembro 15, 2014"],
+        "body": 
+          [
+            "An affair of the heart \"hinged\" on cocktails and conversation... Our first date was at Contigo in Austin after connecting on the online dating app, Hinge. Relieved to recognize each other's faces in a sea of online dating profiles, our first date was mellow, void of (most) of the usual awkwardness. Though there was the standard first date chit chat about where we were each from, what we did for fun, etc., one thing was clear - we both had a profound love for music and whether Josh knew it then or not, wine. A love that would carry us through to...",
+            "Foi um assunto do coração que iniciou com coquetéis e conversa. O nosso primeiro encontro ocorreu no restaurante Contigo em Austin, após a nossa conexão no aplicativo Hinge. Aliviados de poder conhecer um ao outro depois de um mar de perfis online, foi uma experiencia suave e sem o desconforto típico destes “rendezvous.” Houve o típico bate-papo sobre as nossas origens e os nossos divertimentos favoritos. Mas estava bem evidente que ambos tínhamos um profundo amor pela música e pelo bom vinho. Este último o Josh ainda não conhecia mas viria a conhecer. E isto nos leva a..."
+          ]
+      },
+      "two":{
+        "date": ["October 3, 2014", "Outubro 3, 2014"],
+        "body":
+          [
+            "Wigs, balloon bombs, and amore in the air... Want to get to know someone? Spend 72 hours with them at a music festival. Austin City Limits turned into our third, fourth and fifth dates. During each of our self-inflicted themed days we wigged out, dressed as Florida tourists and put on our Chelsea/Giants best. We've been laughing, sharing stories and swaying to the music ever since.",
+            "Perucas, balaões de agua, e mais …. Se quiserem conhecer bem uma pessoa, setenta e duas horas juntos em festa de musica funciona bem. O festival “Austin City Limits” servio bem para o nosso terceiro, quarto, e quinto encontro. Creámos dias temáticos: dia de peruca, dia de turistas de Florida, e dia de camiseta das equipes Giants e Chelsea. E desde então continuamos a rir, a contar estorias, e a balançar."
+          ]
+      },
+      "three":{
+        "date": ["April 9, 2015", "Abril 9, 2015"],
+        "body":
+          [
+            "Off to see the wizard... Josh took Christina to his second home, Seattle, for her birthday. It was in the Emerald City we indulged our love for oysters, coffee and the Sound. It was reassuring we could make home anywhere we went, if even for just one memorable week.",
+            "Buscando o feiticeiro ….. O Josh leva a Christina à sua segunda cidade, Seattle, para ela celebrar o ceu aniversário. Foi em Seattle que aproveitámos comer ostras, beber café, e apreciar as vistas da ria. Foi refrescante saber que podemos establecer residencia em qualquer lugar, mesmo que seja só por uma semana."
+          ]
+      },
+      "four":{
+        "date": ["September 6, 2015", "Setembro 6, 2015"],
+        "body":
+          [
+            "From Meet the Parents to Hawaii 5-0... Remember what we said about really getting to know someone at a music festival? Well, take those three days and turn them into 10 days including a five hour flight to Hawaii and that's how you really get to know their family. There was one gorgeous home, copious amounts of wine/cocktails, quality cigar time, incredibly beautiful sunsets and a romantic kiss under a freezing waterfall.",
+            "Desde \"Meet the parents\" (Conhecer os parentes) até o Hawaii 5-0 ( Hawaii: Força Especial ) .Lembram que antes falámos de conhecer uma pessoa bem num festival de musica durante 3 dias? Desta vez foram 10 dias e um voo de 5  horas para o Hawaii. Assim é que se conhece bem a familia. E ao chegar lá encontrar uma casa fabulosa, com bom vinho, coquetéis tropicais, e até tempo para os homens fumarem um bom charuto. E ainda os incríveis pores do sol e um beijo romantico sob uma cachoeira gelada."
+          ]
+      },
+      "five":{
+        "date": ["January 10, 2016", "Janeiro 10, 2016"],
+        "body": 
+          [
+            "Chewie becomes our co-pilot... We decided to build our family by adding one rather large fur-child. We made the pilgrimage to Oklahoma to rescue him and all 115lbs+ of him has been slobbering his way into our hearts (and our bed) ever since.",
+            "O Chewie chega e se estabelece como o nosso co-piloto. Decidimos adicionar à familia um grande filho cabeludo de cinquenta e dois kilos. Viajámos ate Oklahoma para resgatá-lo. E ele tem capturado o nosso coração, e um pedacinho das nossas camas também."
+          ]
+      },
+      "six":{
+        "date": ["June 13, 2016", "Junho 13, 2016"],
+        "body":
+          [
+            "European Vacation aka \"the good vacation\"... this is where Josh got to indulge in his nasty soccer habit and my Portuguese crush on Ronaldo (ha). It was two weeks of backpacking through England, France and Ireland in the midst of Europe's biggest futbol tournament. We lived, drank and dined like locals and that's when we knew, we could take this love global.",
+            "Férias na Europa, aliás, as boas ferias. Isto foi a oportunidade para o Josh desfrutar da sua constante paixão pelo futebol. E Ele ficou sabendo da minha grande paixão por Ronaldo. Haha. Foram duas semanas de andar de mochila pela Inglaterra, França, e Irlanda durante a Eurocopa 2016. Vivemos, bebemos e comemos como os nativos. E desde esse tempo reconhecemos que o nosso amor é global."
+          ]
+      },
+      "seven":{
+        "date": ["December 25, 2016", "Dezembro 25, 2016"],
+        "body":
+          [
+            "A \"very Holguin-Furtado\" Christmas... after a concussion sidelined Christina's plans for a California Christmas, we celebrated in Austin with crepes, espresso and Chinese food. Gathered around our tiny tree with our little family, we knew we had found home in each other.",
+            "Um natal muito Holguin-Furtado. Depois de uma concussão adiar os planos da Christina para um natal na Califórnia, celebrámos em Austin com crepes, espresso , e comida chinesa. À volta da nossa pequena árvore de natal sabíamos que tínhamos encontrado um lar em nós todos."
+          ]
+      },
+      "eight":{
+        "date": ["April 28, 2017", "Abril 28, 2017"],
+        "body":
+          [
+            "She said \"sim!\"... In Texas wine country (Fredericksburg), in front Messina Hof winery, Josh popped the question, in Portuguese no less! With our parents capturing the moment, we knew it was time we sealed the deal. Which leads us to...",
+            "Ela disse que sim. Na área viticultural de Fredicksburg em Texas, em frente d'adega Messina Hop, o Josh me pedio em casamento - em português! E os nossos país fotografaram esse momento especial. Sabíamos que já era tempo de selar o contrato. O que nos leva a ……."
+          ]
+      }
+    }
+  },
+  "venue": {
+    "title": ["Can I get a witness?", "Preciso de testemunhas!"],
+    "sub_title": ["Ceremony & Reception", "Cerimônia & Recepção"]
+  },
+  "playlist": {
+    "title": ["Christina + Josh's ATX Playlist", "Os lugares favoritos da Christina e do Josh em Austin"]
+  },
+  "rsvp": {
+    "attend": ["Will You Attend?", "Você vai participar?"],
+    "submit": ["Submit", "Enviar"]
   }
 }

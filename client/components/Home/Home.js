@@ -6,7 +6,7 @@ import './Home.scss'
 @connect((store) => {
   return {
     translate: getTranslate(store.local)
-  };
+  }
 })
 export default class Header extends Component{
 
@@ -67,7 +67,7 @@ export default class Header extends Component{
             </div>
             <div className="seconds">
               {this.state.seconds}
-              <span>Seconds</span>
+              <span>{translate("home.seconds")}</span>
             </div>
           </div>
         </div>
