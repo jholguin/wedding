@@ -1,0 +1,41 @@
+.admin{
+  & > header{
+    position: static;
+    padding: 20px;
+
+    h1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      &.icon-octopus:before{
+        padding-right: 10px;
+        color: #11778a;
+      }
+    }
+  }
+  .dashboard{
+    font-family: fantasy;
+    padding-top: 15px;
+
+    .header {
+      .table-cell{
+        border-bottom: 1px solid #000;
+      }
+    }
+
+    .table{
+      display: table;
+      width: 100%;
+    }
+
+    .table-row{
+      display: table-row;
+    }
+
+    .table-cell{
+      display: table-cell;
+      padding: 20px;
+    }
+  }
+}

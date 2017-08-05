@@ -12,3 +12,12 @@ export function submitRSVP(rsvp) {
     });
   }
 }
+
+export function fetchRSVP(){
+  return function(dispatch) {
+    dispatch({type: "FETCH_RSVP"});
+    rsvpRef.on('value', (snapshot) => {
+      dispatch({type: "FETCH_RSVP_FULFILLED", payload: snapshot.val() })
+    })
+  }
+}

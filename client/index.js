@@ -1,21 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { HashRouter, Route } from 'react-router-dom'
 import { Provider } from "react-redux"
 import { setLanguages, addTranslation } from 'react-localize-redux';
-
-import './components/App/base.scss'
-
-import Header from './components/Header/Header'
-import Home from './components/Home/Home'
-import Couple from './components/Couple/Couple'
-import OurStory from './components/OurStory/OurStory'
-import Venue from './components/Venue/Venue'
-import Registry from './components/Registry/Registry'
-import Rsvp from './components/Rsvp/Rsvp'
-import Playlist from './components/Playlist/Playlist'
-
-import { fetchUser } from "./actions/rsvpActions"
 import store from "./store"
+import App from './components/App/App'
+import Admin from './components/Admin/Admin'
 
 const languages = ['en', 'pt'];
 store.dispatch(setLanguages(languages));
@@ -23,23 +13,16 @@ store.dispatch(setLanguages(languages));
 const pageTranslations = require('./global.locale.json')
 store.dispatch(addTranslation(pageTranslations));
 
+
+
 ReactDOM.render(
     <Provider store={store}>
-    	<div>
-    		<a id="home" />
-    		<Header />
-    		<Home weddingDate="Feburary 24, 2018" />
-            <Couple />
-            <OurStory />
-            <Venue />
-            <Playlist />
-            <Registry />
-            <Rsvp />
-            <footer>
-              Developed by yours truely <a href="http://www.thinkjosh.com">&copy;Thinkjosh.com</a>
-              <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-            </footer>
-    	</div>
+    	<HashRouter basename="/">
+            <div>
+                <Route exact path="/" component={App} />
+                <Route exact path="/admin" component={Admin} />
+            </div>
+        </HashRouter>
     </Provider>
 	,document.getElementById('app')
 )
