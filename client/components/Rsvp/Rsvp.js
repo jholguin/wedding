@@ -54,10 +54,10 @@ export default class Rsvp extends Component{
         <h2>RSVP</h2>
         <form onSubmit={this.handleSubmit} className={(rsvp.submitting || rsvp.submitted) ? 'hide' : 'show'}>
           <label htmlFor="name">
-            <input type="text" placeholder="Full Name" name="fullname" onChange={this.handleChange} value={this.state.fullname}  />
+            <input type="text" placeholder="Full Name" name="fullname" onChange={this.handleChange} value={this.state.fullname}  required/>
           </label>
           <label htmlFor="email">
-            <input type="text" placeholder="Email" name="email" onChange={this.handleChange} value={this.state.email} />
+            <input type="email" placeholder="Email" name="email" onChange={this.handleChange} value={this.state.email} required/>
           </label>
           <label htmlFor="attendance">
             {translate("rsvp.attend")}
