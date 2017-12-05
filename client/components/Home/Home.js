@@ -69,7 +69,6 @@ export default class Header extends Component{
                             <span>{translate("home.seconds")}</span>
                         </div>
                     </div>
-                    <span className="icon-octopus"></span>
                 </div>
             </section>
         )
