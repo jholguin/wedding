@@ -29,6 +29,5 @@ function sendRsvpMessage(rsvp){
     axios.post(MESSAGE_URL + '/sendMessage', {
         guestName: rsvp.fullname
     }).then((response) => {
-        console.log(response)
     })
 }
