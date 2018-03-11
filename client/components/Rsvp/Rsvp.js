@@ -52,7 +52,8 @@ export default class Rsvp extends Component{
       <section className="container rsvp">
         <a id="rsvp" />
         <h2>RSVP</h2>
-        <form onSubmit={this.handleSubmit} className={(rsvp.submitting || rsvp.submitted) ? 'hide' : 'show'}>
+        <p>Ah shucks, it looks like we have reached our limit for our speical day.</p>
+        {/* <form onSubmit={this.handleSubmit} className={(rsvp.submitting || rsvp.submitted) ? 'hide' : 'show'}>
           <label htmlFor="name">
             <input type="text" placeholder="Full Name" name="fullname" onChange={this.handleChange} value={this.state.fullname}  required/>
           </label>
@@ -68,7 +69,7 @@ export default class Rsvp extends Component{
             </select>
           </label>
           <input type="submit" value={translate("rsvp.submit")} />
-        </form>
+        </form> */}
         <img src={hearts} alt="loading" className={(rsvp.submitting) ? 'show' : 'hide'} />
         <div className={`success ${(rsvp.submitted) ? 'show' : 'hide'}`}>
           Thank you for your rsvp
